@@ -40,5 +40,3 @@ jobs:
           project: "discord-http-example"
           entrypoint: "bot.gen.ts"
           root: ""
-          
-          
