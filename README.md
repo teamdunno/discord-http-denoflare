@@ -9,6 +9,16 @@ First, run the development bot:
 deno task dev
 ```
 
+In order to obtain a public url to use as the interactions endpoint for Discord,
+you need to forward a port, personally, I use VSCode's public port forward
+system
+
+If you aren't using VSCode, Cloudflared is a good cli option.
+
+```bash
+deno run -A npm:cloudflared tunnel --url=localhost:8000
+```
+
 You can try editing your bot by modifying `src/commands/greet.ts`.
 
 ## Deploying
