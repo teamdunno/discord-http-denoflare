@@ -1,4 +1,4 @@
-This is a simple [Discord-http](https://jsr.io/@inbestigator/discord-http)
+This is a simple example for a bot made with [Discord-http](https://jsr.io/@inbestigator/discord-http).
 
 ## Getting Started
 
