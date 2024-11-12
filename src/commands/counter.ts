@@ -1,6 +1,8 @@
-import type {
-  CommandConfig,
-  CommandInteraction,
+import {
+  ActionRow,
+  Button,
+  type CommandConfig,
+  type CommandInteraction,
 } from "@inbestigator/discord-http";
 const kv = await Deno.openKv();
 
@@ -9,14 +11,29 @@ export const config: CommandConfig = {
 };
 
 export default async function counter(interaction: CommandInteraction) {
-  await kv.atomic().sum(["runs"], 1n).commit();
+  await kv.atomic().sum(["counter"], 1n).commit();
 
-  const count = await kv.get(["runs"]);
+  const count = await kv.get(["counter"]);
 
   await interaction.reply({
-    content: `I've been run ${count.value} time${
-      count.value === 1 ? "" : "s"
-    }!`,
+    content: showCount(count.value),
     ephemeral: true,
+    components: [
+      ActionRow(
+        Button({
+          label: "Add",
+          custom_id: "add_counter",
+        }),
+        Button({
+          label: "Reset",
+          style: "Danger",
+          custom_id: "reset_counter",
+        }),
+      ),
+    ],
   });
+}
+
+export function showCount(count: unknown) {
+  return `I've been run ${count} time${count == 1 ? "" : "s"}!`;
 }
