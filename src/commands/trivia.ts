@@ -21,7 +21,7 @@ function decodeHTMLEntities(text: string): string {
 }
 
 export const config: CommandConfig = {
-  description: "Gives a randomtrivia question",
+  description: "Gives a random trivia question",
 };
 
 export default async function counter(interaction: CommandInteraction) {
