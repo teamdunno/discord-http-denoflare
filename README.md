@@ -1,4 +1,4 @@
-This is a simple example for a bot made with
+This is a simple example bot made with
 [Discord-http](https://jsr.io/@inbestigator/discord-http).
 
 If you're using Node, or another non-Deno runtime, I'd recommend using
