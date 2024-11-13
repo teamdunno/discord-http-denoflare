@@ -1,6 +1,9 @@
 This is a simple example for a bot made with
 [Discord-http](https://jsr.io/@inbestigator/discord-http).
 
+If you're using Node, or another non-Deno runtime, I'd recommend using
+[the Node-compatible variant](https://github.com/Inbestigator/discord-http-example/tree/node)
+
 ## Getting Started
 
 First, run the development bot:
