@@ -1,7 +1,7 @@
 ## NOTE!
 This is an experiment repository that was made by [@cupglassdev](https://github.com/cupglassdev), and not ready for production usage
 
-If the module was fails to deploy, on test, we're going to shutdown the repository ASAP
+If the module was failed to deploy, on test, we're going to shutdown the repository ASAP
 
 Or else, this repo going to be a 'Public Template' on Github
 
