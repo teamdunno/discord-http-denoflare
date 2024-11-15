@@ -1,3 +1,11 @@
+## NOTE!
+This is an experiment package that was made by [@cupglassdev](https://github.com/cupglassdev). And not ready for production usage
+
+If the module was fails to deploy, on test, we're going to shutdown the repository ASAP
+
+Or else, this repo going to be a 'Public Template' on Github
+
+## Introduction
 This is a simple example bot made with
 [Discord-http](https://jsr.io/@inbestigator/discord-http).
 
