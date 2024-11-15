@@ -1,5 +1,5 @@
 ## NOTE!
-This is an experiment package that was made by [@cupglassdev](https://github.com/cupglassdev). And not ready for production usage
+This is an experiment repository that was made by [@cupglassdev](https://github.com/cupglassdev), and not ready for production usage
 
 If the module was fails to deploy, on test, we're going to shutdown the repository ASAP
 
